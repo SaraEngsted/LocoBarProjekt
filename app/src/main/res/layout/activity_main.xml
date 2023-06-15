@@ -11,33 +11,57 @@
         android:layout_width="411dp"
         android:layout_height="1092dp"
         android:background="#000000"
-        android:rotation="90"
+        android:rotation="-360"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916"
+        app:layout_constraintVertical_bias="0.819"
         app:srcCompat="@drawable/baggrund_locobar"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:layout_width="272dp"
-        android:layout_height="130dp"
+        android:layout_width="333dp"
+        android:layout_height="135dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="90dp"
         android:fontFamily="@font/griffy"
         android:gravity="center"
-        android:text="Velkommen! Loco Bar"
+        android:text="VELKOMMEN! LOCO BAR"
+        android:textColor="#121111"
         android:textSize="48sp"
+        android:textStyle="bold"
         app:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.155" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="194dp"
+        android:layout_height="85dp"
+        android:background="#AE4F4F"
+        android:backgroundTint="#CDDC39"
+        android:fontFamily="@font/griffy"
+        android:text="START DAGEN"
+        android:textStyle="bold"
+        app:rippleColor="#BD4040"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="192dp"
+        android:layout_height="81dp"
+        android:fontFamily="@font/griffy"
+        android:text="REDIGERE PÅ MENU"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="442dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
