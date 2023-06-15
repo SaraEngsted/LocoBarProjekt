@@ -21,6 +21,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="333dp"
         android:layout_height="135dp"
         android:layout_marginStart="10dp"
@@ -44,26 +45,32 @@
         android:id="@+id/button"
         android:layout_width="194dp"
         android:layout_height="85dp"
-        android:background="#AE4F4F"
-        android:backgroundTint="#CDDC39"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="332dp"
+        android:background="#E2FBFF"
         android:fontFamily="@font/griffy"
+        android:onClick="button1"
         android:text="START DAGEN"
         android:textStyle="bold"
-        app:rippleColor="#BD4040"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="323dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#BD4040" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="192dp"
         android:layout_height="81dp"
-        android:background="#8BC34A"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="468dp"
+
+        android:background="#E2FBFF"
+
         android:fontFamily="@font/griffy"
+        android:onClick="button2"
         android:text="REDIGERE PÅ MENU"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="442dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

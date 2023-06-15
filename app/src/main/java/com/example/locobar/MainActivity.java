@@ -9,10 +9,11 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
 
-    public void button(View view){
+    public void button1(View view){
 
         Log.i("info","Button pressed! 1");
     }
+
 
     public void button2(View view){
 
