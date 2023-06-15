@@ -51,12 +51,14 @@
         android:textStyle="bold"
         app:rippleColor="#BD4040"
         tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="323dp" />
+        tools:layout_editor_absoluteY="323dp"
+        />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="192dp"
         android:layout_height="81dp"
+        android:background="#8BC34A"
         android:fontFamily="@font/griffy"
         android:text="REDIGERE PÅ MENU"
         android:textStyle="bold"
