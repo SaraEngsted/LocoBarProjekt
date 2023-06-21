@@ -62,12 +62,10 @@
         android:layout_height="81dp"
         android:layout_marginStart="116dp"
         android:layout_marginTop="468dp"
-
         android:background="#E2FBFF"
-
         android:fontFamily="@font/griffy"
         android:onClick="button2"
-        android:text="REDIGERE PÅ MENU"
+        android:text="REDIGER MENU"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

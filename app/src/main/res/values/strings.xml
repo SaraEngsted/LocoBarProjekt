@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Loco Bar</string>
+
+    <string-array name="Kategori">
+        <item>Cider</item>
+        <item>Øl</item>
+        <item>Drinks</item>
+        <item>Shots</item>
+        <item>Andet</item>
+    </string-array>
+
 </resources>
