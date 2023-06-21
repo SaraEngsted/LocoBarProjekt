@@ -19,6 +19,11 @@ public class CartItem {
         this.quantity = quantity;
     }
 
+    public CartItem(String productName, double price) {
+        this.productName = productName;
+        this.price = price;
+    }
+
     public CartItem() {
 
     }
@@ -44,7 +49,13 @@ public class CartItem {
         this.quantity = quantity;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "CartItem{" +
+                "productName='" + productName + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", imageView=" + imageView +
+                '}';
+    }
 }

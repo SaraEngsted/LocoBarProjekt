@@ -70,5 +70,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="192dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="608dp"
+        android:background="#E2FBFF"
+        android:fontFamily="@font/griffy"
+        android:onClick="openActivity4"
+        android:text="REDIGER MENU"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

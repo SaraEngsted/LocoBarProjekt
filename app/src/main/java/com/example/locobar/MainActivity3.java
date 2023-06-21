@@ -10,46 +10,50 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import java.util.HashMap;
+import java.util.Map;
 
-public class MainActivity3 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private Button button;
-    private Button button2;
+public class MainActivity3 extends AppCompatActivity {
+    private EditText editTextName;
+    private EditText editTextPrice;
+    private Button buttonAdd;
+
+    private final FirebaseService firebaseService = new FirebaseService();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        button = (Button) findViewById(R.id.buttonAdd);
-        button.setOnClickListener(view -> openActivity2());
+        editTextName = findViewById(R.id.editTextName);
+        editTextPrice = findViewById(R.id.EditTextIPrice);
+        buttonAdd = findViewById(R.id.buttonAdd);
 
-        button2 = (Button) findViewById(R.id.tilbage1);
-        button2.setOnClickListener(view -> openActivity());
-
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addItem();
+            }
+        });
     }
 
-    public void saveInfo (View view){
-
-    }
-
-    public void openActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    public void openActivity2() {
-        Intent intent2 = new Intent(this, MainActivity3.class);
-        startActivity(intent2);
-    }
-
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-
+    private void addItem() {
+        String productName = editTextName.getText().toString().trim();
+        double price = Double.parseDouble(editTextPrice.getText().toString().trim());
+        CartItem itemToAdd = new CartItem(productName, price);
+        firebaseService.addItem(itemToAdd);
     }
 }
