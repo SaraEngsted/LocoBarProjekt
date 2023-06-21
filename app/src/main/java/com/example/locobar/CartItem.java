@@ -1,0 +1,50 @@
+package com.example.locobar;
+
+import android.widget.ImageView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CartItem {
+    private  String productName;
+    private double price;
+    private int quantity;
+    private ImageView imageView;
+
+
+
+    public CartItem(String productName,double price, int quantity){
+        this.productName = productName;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public CartItem() {
+
+    }
+
+    public void setImageView(ImageView imageView) {
+        this.imageView = imageView;
+    }
+
+
+    public String getProductName(){
+        return productName;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public int getQuantity(){
+        return quantity;
+    }
+
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
+    }
+
+
+
+
+}
